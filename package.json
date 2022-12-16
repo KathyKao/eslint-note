@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix"
+    "lint": "eslint . --ext .js,.ts,.vue",
+    "lint-1": "eslint --ext .js src/",
+    "lint-2": "eslint src/*.js",
+    "lint-fix": "eslint . --ext .js,.ts,.vue --fix",
+    "format": "prettier --write src/**/*.{js,ts,vue} .*.js"
   },
   "author": "",
   "license": "ISC",
